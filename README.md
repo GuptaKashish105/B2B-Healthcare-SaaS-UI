@@ -6,7 +6,7 @@ A modern React-based healthcare platform with Firebase authentication and real-t
 
 ## 🚀 Live Demo
 
-👉 https://b2-b-healthcare-saa-s-ui-mt7i.vercel.app/login
+👉 https://b2-b-healthcare-saa-s-ui-mt7i.vercel.app/
 
 ---
 

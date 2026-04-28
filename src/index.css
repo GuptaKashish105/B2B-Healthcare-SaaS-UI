@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Custom focus styles */
+.focus-ring:focus {
+  @apply ring-2 ring-indigo-500 ring-offset-2;
+}
+
+/* Smooth transitions for all elements */
+* {
+  transition-property:
+    color, background-color, border-color, text-decoration-color, fill, stroke,
+    opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Custom gradient backgrounds */
+.gradient-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.gradient-secondary {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.gradient-success {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Custom shadows */
+.shadow-soft {
+  box-shadow:
+    0 2px 15px -3px rgba(0, 0, 0, 0.07),
+    0 10px 20px -2px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-glow {
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.15);
+}

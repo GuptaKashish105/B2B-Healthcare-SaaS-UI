@@ -25,7 +25,7 @@ const Analytics = React.memo(() => {
   }, []);
 
   return (
-    <Layout title="Analytics">
+    <Layout title="">
       <PageHeader
         title="Analytics"
         description="Track platform performance, patient growth and appointment trends across the healthcare network."

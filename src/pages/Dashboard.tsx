@@ -95,7 +95,7 @@ const Dashboard = React.memo(() => {
   };
 
   return (
-    <Layout title="Dashboard">
+    <Layout title="">
       <PageHeader
         title="Dashboard"
         description="Monitor platform health, bookings, and upcoming patient care in one view."

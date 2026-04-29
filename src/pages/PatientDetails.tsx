@@ -23,7 +23,7 @@ const PatientDetails = React.memo(() => {
   ).length;
 
   return (
-    <Layout title="Patient Details">
+    <Layout title="">
       <PageHeader
         title="Patient Details"
         description="Review patient records, manage care actions and track patient statuses across the system."

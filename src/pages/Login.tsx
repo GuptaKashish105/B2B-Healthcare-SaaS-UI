@@ -40,9 +40,6 @@ const Login = React.memo(() => {
           <p className="mt-2 text-sm text-gray-600">
             Sign in to your healthcare dashboard
           </p>
-          <p className="mt-1 text-xs text-gray-500">
-            Use any email and password for this demo
-          </p>
         </div>
 
         {/* Form */}

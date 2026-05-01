@@ -7,6 +7,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import { useAuthStore } from "./features/auth/store";
+import { Toaster } from "react-hot-toast";
 
 const Login = lazy(() => import("./pages/Login"));
 const Dashboard = lazy(() => import("./pages/Dashboard"));
@@ -32,6 +33,16 @@ function App() {
 
   return (
     <Router>
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          style: {
+            borderRadius: "10px",
+            background: "#1e293b",
+            color: "#fff",
+          },
+        }}
+      />
       <Suspense fallback={<LoadingSpinner />}>
         <Routes>
           <Route

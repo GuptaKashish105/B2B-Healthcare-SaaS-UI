@@ -15,6 +15,7 @@ import Card from "../components/common/Card";
 import Button from "../components/common/Button";
 import StatBadge from "../components/common/StatBadge";
 import { requestNotificationPermission } from "../lib/firebase";
+import toast from "react-hot-toast";
 
 const Dashboard = React.memo(() => {
   const user = useAuthStore((state) => state.user);
@@ -22,6 +23,7 @@ const Dashboard = React.memo(() => {
   const showNotification = async () => {
     try {
       const token = await requestNotificationPermission();
+      toast.success("New patient appointment scheduled");
       if (token) {
         // In a real app, you'd send this token to your server
         // For demo purposes, we'll show a local notification

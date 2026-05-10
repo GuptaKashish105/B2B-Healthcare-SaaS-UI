@@ -131,12 +131,57 @@ const Login = React.memo(() => {
                 "Sign in"
               )}
             </button>
+            {/* Demo Login Buttons */}
+            <div className="space-y-3">
+              <button
+                type="button"
+                onClick={async () => {
+                  setIsLoading(true);
+                  setError("");
+
+                  try {
+                    await login("test@gmail.com", "demo123");
+                    navigate("/dashboard");
+                  } catch {
+                    setError("Demo login failed");
+                  } finally {
+                    setIsLoading(false);
+                  }
+                }}
+                className="w-full py-3 px-4 rounded-lg border border-gray-300 text-sm font-medium hover:bg-gray-50 transition-colors"
+              >
+                Continue as Demo User
+              </button>
+
+              <button
+                type="button"
+                onClick={async () => {
+                  setIsLoading(true);
+                  setError("");
+
+                  try {
+                    await login("admin@test.com", "demo123");
+                    navigate("/dashboard");
+                  } catch {
+                    setError("Admin demo login failed");
+                  } finally {
+                    setIsLoading(false);
+                  }
+                }}
+                className="w-full py-3 px-4 rounded-lg border border-gray-300 text-sm font-medium hover:bg-gray-50 transition-colors"
+              >
+                Continue as Admin
+              </button>
+            </div>
           </form>
 
           {/* Footer */}
           <div className="mt-6 text-center">
             <p className="text-xs text-gray-500">
               Secure healthcare platform • Protected by HIPAA compliance
+            </p>
+            <p className="text-xs text-gray-400 mt-3">
+              Demo access available for recruiters & reviewers
             </p>
           </div>
         </div>

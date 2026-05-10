@@ -10,6 +10,15 @@ A modern React-based healthcare platform with Firebase authentication and real-t
 
 ---
 
+### Demo Credentials
+
+| Role | Email | Password |
+|------|------|------|
+| User | test@gmail.com | demo123 |
+| Admin | admin@test.com | demo123 |
+
+You can also use the built-in **Demo Login** buttons directly from the login screen.
+
 ## ✨ Features
 
 * ✅ Firebase Authentication (Email/Password)
@@ -19,34 +28,6 @@ A modern React-based healthcare platform with Firebase authentication and real-t
 * ✅ Responsive modern UI
 * ✅ TypeScript for type safety
 * ✅ Zustand for scalable state management
-
----
-
-## 🔐 Authentication (Important)
-
-This application uses **Firebase Authentication** with pre-created users.
-
-### ✅ Allowed Login Credentials
-
-Use ONLY the following credentials:
-
-* **User 1**
-
-  * Email: `test@gmail.com`
-  * Password: `demo123`
-
-* **User 2**
-
-  * Email: `admin@test.com`
-  * Password: `demo123`
-
----
-
-### ❗ Important Note
-
-* New users **cannot sign up from UI**
-* Only users already created in Firebase Console can log in
-* Any random email/password **will NOT work**
 
 ---
 
@@ -121,9 +102,14 @@ npm run build
 
 ### 🔐 Authentication
 
-* Login using pre-created Firebase users
-* Session persists across refresh
-* Logout supported
+This project uses Firebase Authentication with pre-created demo users.
+
+### Authentication Features
+
+- Persistent login sessions
+- Protected dashboard routes
+- Demo login support
+- Logout functionality
 
 ### 🔔 Notifications
 
@@ -175,3 +161,4 @@ src/
 ## 🙌 Author
 
 **Kashish Gupta**
+Frontend Engineer • React • TypeScript • Scalable SaaS UI Development

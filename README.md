@@ -33,12 +33,12 @@ Use ONLY the following credentials:
 * **User 1**
 
   * Email: `test@gmail.com`
-  * Password: *(use the password configured in Firebase)*
+  * Password: `demo123`
 
 * **User 2**
 
   * Email: `admin@test.com`
-  * Password: *(use the password configured in Firebase)*
+  * Password: `demo123`
 
 ---
 
